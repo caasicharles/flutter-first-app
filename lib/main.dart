@@ -33,14 +33,14 @@ class MyAppState extends ChangeNotifier { // ChangeNotifier is the easiest way t
   var current = WordPair.random();
   String col = 'redAccent';
   var favorites = <WordPair>[];
-  GlobalKey? historyListKey;
-  var history = <WordPair>[];
+  // GlobalKey? historyListKey;
+  // var history = <WordPair>[];
   late dynamic dataApiHolder = [];
 
   void getNext() {
-    history.insert(0, current);
-    var animatedList = historyListKey?.currentState as AnimatedListState?;
-    animatedList?.insertItem(0);
+    // history.insert(0, current);
+    // var animatedList = historyListKey?.currentState as AnimatedListState?;
+    // animatedList?.insertItem(0);
     current = WordPair.random();
     notifyListeners(); // ensures that anyone using the MyAppState state is notified the changes that have taken place
   }

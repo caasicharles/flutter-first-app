@@ -21,11 +21,11 @@ class GeneratorPage extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Expanded(
-            flex: 1,
-            child: HistoryListView(),
-          ),
-          SizedBox(height: 10),
+          // Expanded(
+          //   flex: 1,
+          //   child: HistoryListView(),
+          // ),
+          // SizedBox(height: 10),
           BigCard(pair: pair),
           SizedBox(height: 10),
           Row(
